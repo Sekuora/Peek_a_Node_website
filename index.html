@@ -88,7 +88,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="Peek a Node Docs" class="md-header__button md-logo" aria-label="Peek a Node Docs" data-md-component="logo">
       
@@ -172,8 +174,6 @@
         </button>
       </nav>
       
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
@@ -199,96 +199,6 @@
       
         
           
-            
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-    
-  
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
-        
-  
-  
-    
-  
-  Home
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="installation/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Installation
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="quick-start/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Quick Start
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="global-collections/" class="md-tabs__link">
-          
-  
-  
-    
-  
-  Features
-
-        </a>
-      </li>
-    
-  
-
-      
-    </ul>
-  </div>
-</nav>
-          
         
       
       <main class="md-main" data-md-component="main">
@@ -302,12 +212,8 @@
                     
 
 
-  
 
-
-  
-
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="." title="Peek a Node Docs" class="md-nav__button md-logo" aria-label="Peek a Node Docs" data-md-component="logo">
       
@@ -394,16 +300,22 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
+    <nav class="md-nav" aria-label="Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Features
+        Documentation
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -419,10 +331,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#quick-start-guide-pdf-versions" class="md-nav__link">
+  <a href="#documentation-pdf-versions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Quick Start Guide PDF Versions
+        Documentation PDF Versions
       
     </span>
   </a>
@@ -499,22 +411,7 @@
   
     
     
-      
-        
-      
-        
-      
-        
-      
-        
-      
     
-    
-    
-      
-      
-        
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -531,7 +428,7 @@
   <span class="md-ellipsis">
     
   
-    Features
+    Documentation
   
 
     
@@ -547,7 +444,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Features
+    Documentation
   
 
           </label>
@@ -679,6 +576,82 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting Started
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#videos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Videos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-pdf-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation PDF Versions
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           
             <div class="md-content" data-md-component="content">
@@ -694,18 +667,19 @@
 <h2 id="getting-started">Getting Started</h2>
 <p>Check out the <a href="quick-start/">Quick Start Guide</a> to get up and running in minutes.</p>
 <p><img alt="Peek a Node Logo" src="assets/logo/Peek_a_Node_Logo.png" /></p>
-<h2 id="features">Features</h2>
+<h3 id="documentation">Documentation</h3>
 <ul>
-<li><strong>Quick Preview</strong>: valid for Shader, Geometry, and Compositor nodes.</li>
-<li><strong>Performance</strong>: Optimized for speed and minimal overhead.</li>
-<li><strong>Customizable</strong>: Adjust settings to fit your specific workflow needs.</li>
+<li><a href="global-collections/"><strong>Global Collections</strong></a>: The easiest way to using Peek.</li>
+<li><a href="hierarchy-operations/"><strong>Hierarchy &amp; Operations</strong></a>: Manage node groups, root materials, and variants.</li>
+<li><a href="custom-collections/"><strong>Custom Collections</strong></a>: Curate specific parameters inside node groups.</li>
+<li><a href="nodes-in-peek/"><strong>Nodes in Peek</strong></a>: Individual node operations and organization.</li>
 </ul>
 <h2 id="videos">Videos</h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Eecf93XbrfE" title="Peek a Node Promo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DRKV5fjk0n8" title="Peek a Node Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<h2 id="quick-start-guide-pdf-versions">Quick Start Guide PDF Versions</h2>
+<h2 id="documentation-pdf-versions">Documentation PDF Versions</h2>
 <ul>
 <li><a href="assets/pdfs/Peek%20a%20Node%20V1.1.2%20Quick%20Start%20Guide_EN.pdf">English Version (PDF)</a></li>
 <li><a href="assets/pdfs/Peek%20a%20Node%20V1.1.2%20Quick%20Start%20Guide_JP.pdf">Japanese Version (PDF)</a></li>
@@ -730,12 +704,6 @@
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  Back to top
-</button>
-        
       </main>
       
         <footer class="md-footer">
@@ -745,7 +713,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      A product created by  <a href="https://sites.google.com/view/trestletrotter/home" target="_blank" rel="noopener"> Trestle Trotter </a> Copyright &copy; 2026
+      A website created by  <a href="https://sites.google.com/view/trestletrotter/home" target="_blank" rel="noopener"> Trestle Trotter <img src="/Peek_a_Node_Docs/assets/logo/TrestleTrotter_Logo.png" alt="Trestle Trotter" style="height: 24px; vertical-align: middle; margin-left: 8px;"> </a> Copyright &copy; 2026
 
     </div>
   
@@ -765,7 +733,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "toc.integrate", "search.suggest", "search.highlight", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
